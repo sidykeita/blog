@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+/* config de base */
+
+:root {
+  --background-color: #081b29;
+  --text-color: #ededed;
+  --good-color: rgb(207, 139, 20);
+  --font-size: 25px;
+  --font-size-title: 40px;
+}
+
+/* header  */
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--background-color);
+  opacity: 0.9;
+  padding: 1 0px;
+
+  .logo img {
+    width: 120px;
+  }
+}
+
+/* menu de navigation */
+
+nav {
+  color: var(--text-color);
+  width: 100%;
+}
+
+#navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+#navigation ul li {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+
+#navigation ul a li:hover {
+  color: rgb(207, 139, 20);
+}
+
+/* section home  */
+
+section {
+  padding: 140px;
+}
+
+#home {
+  background-image: url(images/fond.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+#home p {
+  margin: 30px 110px 20px;
+  font-size: var(--font-size);
+  padding: 20px;
+  text-align: center;
+}
+
+.block {
+  background-color: var(--background-color);
+  border: solid;
+  border-color: var(--good-color);
+  color: var(--text-color);
+  margin-bottom: 15px;
+  opacity: 0.9;
+  padding: 80px;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--font-size-title);
+  color: var(--good-color);
+}
+
+h3 {
+  text-align: center;
+  font-size: 35px;
+}
+span {
+  color: var(--good-color);
+}
+
+
+.button-style button:hover {
+  background-color: var(--good-color);
+}
+
+/* about me */
+
+#about {
+  background: linear-gradient(#d5960dbb, #020735);
+}
+
+h3{
+    margin-top: 20px;
+}
+
+#about .block {
+  border: solid;
+  border-color: var(--good-color);
+  color: var(--text-color);
+  margin-bottom: 15px;
+  opacity: 0.7;
+  padding: 80px;
+}
+
+#about p {
+  font-size: var(--font-size);
+  margin: 30px 110px 20px;
+  font-size: var(--font-size);
+  padding: 20px;
+  text-align: center;
+}
+
+/* partie blog */
+
+#blog{
+    background-image: url(images/elden-ring-thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-1{
+    margin-top: 40px;
+}
+
+.block-articles{
+  background-color: var(--background-color);
+  border: solid;
+  border-color: var(--good-color);
+  color: var(--text-color);
+  margin-bottom: 15px;
+  opacity: 0.9;
+  padding: 50px;
+
+}
+
+.blocks{
+  border: solid 5px ;
+  border-image: linear-gradient(to bottom right, 
+    red, purple,rgb(207, 139, 20), yellow) 30;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  opacity: 0.9;
+  padding: 30px;
+}
+
+.images-aricles img{
+    width: 100%;
+
+}
+
+.article-1 .blocks .article {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.article-2 .blocks .article {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.article-3 .blocks .article {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.article div {
+    padding:20px;
+}
+
+/* page contact */
+
+#contact{
+    background: linear-gradient(#310232bb, #020735);
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .block{
+
+    opacity: 0.7;
+   
+}
+form{
+    display: grid;
+    row-gap: 1rem; 
+}
+
+form input,textarea{
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 1rem;
+    margin-top: 15px;
+
+}
+
+textarea:hover{
+    border: 1px solid orange;
+}
+
+input:hover{
+    border: 1px solid orange;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.button-style{
+    border: 0.2rem solid var(--background-color);
+    border-radius: 0.8rem;
+    padding: 10px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+  }
+
+.button-style:hover{
+    background-color: var(--good-color);
+}
+
+/* page footer */
+
+#footer{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#footer p{
+    padding: 15px;
+    font-size:15px;
+}
+
